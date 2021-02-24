@@ -1,0 +1,29 @@
+@import "variables";
+
+.line {
+  border-color: $gray;
+  border-width: 1px;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  a {
+    margin: 0 24px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+.cp-wrapper {
+  text-align: center;
+  .cp {
+    display: block;
+  }
+}

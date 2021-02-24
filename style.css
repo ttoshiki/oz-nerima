@@ -1,0 +1,811 @@
+/*
+Theme Name: OZ original theme
+Description: OZ Original Theme
+Author: Toshiki Tamaru
+Version: 1.0.0
+Tags: PR, Evangelist
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background-color: #fff7ea;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #fca400;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: underline;
+  color: #4a4a4a;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sec {
+  margin-bottom: 80px;
+}
+
+em {
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  .sp {
+    display: none;
+  }
+}
+
+.logo-wrapper {
+  margin: 0;
+  width: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+  .site-navigation {
+    max-width: 1096px;
+    margin: 16px auto 0 16px;
+  }
+  .logo-wrapper {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 796px) {
+  body {
+    padding: 16px;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.content-area {
+  width: 100%;
+  margin: auto;
+}
+
+.content-area .slideimg {
+  height: auto;
+  max-width: 100%;
+}
+
+.about {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about .heading2 {
+  margin-bottom: 24px;
+}
+
+.about .desc {
+  display: inline-block;
+  margin: 0 auto 40px;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.recruit .recruit-box {
+  width: 80%;
+  margin: 0 auto 40px;
+  background-color: #ab8b67;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.recruit .recruit-box img {
+  display: block;
+  padding-top: 32px;
+  margin: auto;
+  height: 100px;
+  width: auto;
+}
+
+.recruit .recruit-box .desc-wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recruit .recruit-box .desc-wrapper .desc {
+  display: inline-block;
+  margin: 32px auto;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.recruit .to-you {
+  display: block;
+  margin: 0 auto;
+  margin-top: 64px;
+  width: 70%;
+  max-width: 400px;
+}
+
+.recruit .yeah {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  position: relative;
+}
+
+.recruit .heading3-wrapper {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.recruit .heading3-wrapper .heading3 {
+  display: inline;
+  padding: 24px;
+  text-align: center;
+  background-color: #ab8b67;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.bg-white-wrapper {
+  background-color: #fff;
+  border: 1px solid #ab8b67;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 40px;
+  max-width: 440px;
+}
+
+.bg-white-wrapper picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-white-wrapper img {
+  width: 80%;
+}
+
+.bg-white-wrapper .text {
+  flex-direction: column;
+  width: 62%;
+}
+
+.bg-white-wrapper .text .heading4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.bg-white-wrapper .text .desc {
+  margin-top: 8px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.practice-contents .chase-wrapper {
+  width: 120px;
+  height: auto;
+  margin: 0 0 0 auto;
+}
+
+.card-wrapper {
+  width: 100%;
+}
+
+.card-wrapper .plan-wrapper {
+  width: 98%;
+  background-color: #fff;
+  border: 1px solid #ab8b67;
+  border-radius: 6px;
+  margin: 0 auto 40px;
+  max-width: 440px;
+}
+
+.card-wrapper .heading3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-wrapper .card-img {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.card-wrapper .visitor-img {
+  width: 48px;
+}
+
+.card-wrapper .first-terms,
+.card-wrapper .first-terms-price,
+.card-wrapper .second-terms,
+.card-wrapper .second-terms-price,
+.card-wrapper .other {
+  display: block;
+  text-align: center;
+}
+
+.card-wrapper .second-terms {
+  color: #999999;
+  margin-bottom: 4px;
+}
+
+.card-wrapper .second-terms-price {
+  margin: 0 auto 20px;
+  color: #4a4a4a;
+  font-size: 24px;
+}
+
+.card-wrapper .other {
+  color: #999999;
+  padding-bottom: 32px;
+}
+
+.practice-day .bg-white-wrapper {
+  justify-content: center;
+}
+
+.practice-day .text {
+  width: 80%;
+}
+
+.practice-day .text .desc {
+  color: #4a4a4a;
+}
+
+.practice-day p {
+  text-align: center;
+}
+
+.practice-day .em {
+  color: #ff8982;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.practice-place p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.practice-place .place {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.practice-place iframe {
+  width: 100%;
+}
+
+.ban .bg-white-wrapper img {
+  padding: 16px 0;
+}
+
+.schedule .calendar-wrapper {
+  text-align: center;
+}
+
+.schedule iframe {
+  max-width: 100%;
+}
+
+.qa {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.qa .question {
+  background-color: #ab8b67;
+  background-repeat: no-repeat;
+  background-image: url("/wp-content/themes/oz/assets/img/arrow_up.svg");
+  background-position: right 16px center;
+  background-size: 16px;
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px;
+  text-indent: -1em;
+  padding-left: 1.6em;
+  padding-right: 3em;
+}
+
+.qa .question::before {
+  content: "Q ";
+}
+
+.qa .question:hover {
+  cursor: pointer;
+}
+
+.qa .question-close {
+  background-image: url("/wp-content/themes/oz/assets/img/arrow_down.svg");
+}
+
+.qa .answer {
+  display: none;
+  padding: 8px;
+  padding-left: 1.6em;
+  text-indent: -1em;
+}
+
+.qa .answer::before {
+  content: "A ";
+}
+
+.wpcf7-form {
+  margin: 40px auto;
+  max-width: 498px;
+}
+
+.wpcf7-form .form-block {
+  margin-bottom: 32px;
+}
+
+.wpcf7-form .form-block .caution {
+  color: #999999;
+}
+
+.wpcf7-form input {
+  box-sizing: border-box;
+  padding: 0.5em;
+  border: 1px solid #4a4a4a;
+  max-width: 96%;
+}
+
+.wpcf7-form .age input {
+  padding: auto 8px;
+}
+
+.wpcf7-form textarea {
+  box-sizing: border-box;
+  max-width: 96%;
+  border: 1px solid #4a4a4a;
+}
+
+.wpcf7-form .sex .first {
+  margin-left: 0;
+}
+
+.wpcf7-form span.wpcf7-list-item {
+  margin: 0 1em 0 0;
+}
+
+.wpcf7-form .badhistory {
+  height: 2em;
+  border: 1px solid #4a4a4a;
+  width: 96%;
+}
+
+.wpcf7-form .submit {
+  text-align: center;
+}
+
+.wpcf7-form .submitbtn {
+  background-color: #fff;
+  padding: 16px 32px;
+  letter-spacing: 0.1em;
+}
+
+.wpcf7-form .submitbtn:hover {
+  cursor: pointer;
+}
+
+.wpcf7-form span.wpcf7-not-valid-tip {
+  color: #ff8982;
+}
+
+.wpcf7-form div.wpcf7-validation-errors,
+.wpcf7-form div.wpcf7-acceptance-missing {
+  margin: 0;
+  border: 2px solid #ff8982;
+}
+
+@media screen and (min-width: 1024px) {
+  .recruit-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recruit-box-wrapper .recruit-box {
+    width: 30%;
+    font-size: 20px;
+  }
+  .practice-contents .chase-wrapper {
+    margin: 0 auto;
+  }
+  .practice-contents p {
+    text-align: center;
+  }
+  .signup .desc {
+    text-align: center;
+  }
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-wrapper .plan-wrapper {
+    width: 48%;
+  }
+  .card-wrapper .plan-wrapper:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.line {
+  border-color: #999999;
+  border-width: 1px;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.sns a {
+  margin: 0 24px;
+}
+
+.sns img {
+  width: 40px;
+  height: 40px;
+}
+
+.cp-wrapper {
+  text-align: center;
+}
+
+.cp-wrapper .cp {
+  display: block;
+}
+
+.comment {
+  color: #ff8982;
+}
+
+.glide__slide {
+  object-fit: cover;
+}

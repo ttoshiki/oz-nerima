@@ -1,0 +1,16 @@
+@import "variables";
+
+.logo-wrapper {
+    margin: 0;
+    width: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+    .site-navigation {
+        max-width: 1096px;
+        margin: 0 auto;
+    }
+    .logo-wrapper {
+        width: 200px;
+    }
+}

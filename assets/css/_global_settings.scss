@@ -1,0 +1,40 @@
+body {
+  background-color: $bg-color;
+  font-family: tbudrgothic-std, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  color: $orange;
+  letter-spacing: $text-space-m;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: underline;
+  color: $black;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sec {
+  margin-bottom: 80px;
+}
+
+em {
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .sp {
+      display: none;
+    }
+}

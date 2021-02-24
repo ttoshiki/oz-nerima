@@ -1,0 +1,372 @@
+@import "variables";
+
+.slick-arrow {
+    display: none !important;
+}
+
+.content-area {
+    width: 100%;
+    max-width: 1096px;
+    margin: auto;
+
+    & .slideimg {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.about {
+    .heading2 {
+        margin-bottom: 24px;
+    }
+    margin: 0 auto;
+    text-align: center;
+    & .desc {
+        display: inline-block;
+        margin: 0 auto 40px;
+        text-align: left;
+        padding: 0 16px;
+    }
+}
+
+.recruit {
+    .recruit-box {
+        width: 80%;
+        margin: 0 auto 40px;
+        background-color: $brown;
+        color: $white;
+        font-size: 20px;
+        border-radius: 6px;
+
+        & img {
+            display: block;
+            padding-top: 32px;
+            margin: auto;
+            height: 100px;
+            width: auto;
+        }
+
+        & .desc-wrapper {
+                text-align: center;
+                margin: 0 auto;
+
+                & .desc {
+                    display: inline-block;
+                    margin: 32px auto;
+                    text-align: left;
+                    padding: 0 16px;
+                }
+        }
+    }
+
+    .to-you {
+        display: block;
+        margin: 0 auto;
+        margin-top: 64px;
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .yeah {
+        display: block;
+        margin: 0 auto;
+        width: 160px;
+        position: relative;
+    }
+
+    .heading3-wrapper {
+        margin-top: 6px;
+        text-align: center;
+        .heading3 {
+            display: inline;
+            padding: 24px;
+            text-align: center;
+            background-color: $brown;
+            border-radius: 6px;
+            color: $white;
+        }
+    }
+}
+
+.bg-white-wrapper {
+    background-color: $white;
+    border: 1px solid $brown;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 40px;
+    max-width: 440px;
+
+    img {
+        width: 22%;
+    }
+
+    & .text {
+        flex-direction: column;
+        width: 62%;
+        & .heading4 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        & .desc {
+            margin-top: 8px;
+            color: $gray;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.practice-contents {
+    & .chase-wrapper {
+        width: 120px;
+        height: auto;
+        margin: 0 0 0 auto;
+    }
+}
+
+.card-wrapper {
+    width: 100%;
+    & .plan-wrapper {
+        width: 98%;
+        background-color: $white;
+        border: 1px solid $brown;
+        border-radius: 6px;
+        margin: 0 auto 40px;
+        max-width: 440px;
+    }
+    & .heading3 {
+        text-align: center;
+        font-size: 28px;
+    }
+    & .card-img {
+        display: block;
+        margin: 0 auto 40px;
+    }
+    & .visitor-img {
+        width: 104px;
+    }
+    & .member-img {
+        width: 60px;
+    }
+    & .first-terms,
+    & .first-terms-price,
+    & .second-terms,
+    & .second-terms-price,
+    & .other {
+        display: block;
+        text-align: center;
+    }
+    & .second-terms {
+        color: $gray;
+        margin-bottom: 4px;
+    }
+    & .second-terms-price {
+        margin: 0 auto 24px;
+        color: $gray;
+        font-size: 28px;
+    }
+    & .other {
+        color: $gray;
+        padding-bottom: 32px;
+    }
+}
+
+.practice-day {
+    & .bg-white-wrapper {
+        justify-content: center;
+    }
+
+    & .text {
+        width: 80%;
+
+        & .desc {
+            color: $black;
+        }
+    }
+
+    & p {
+        text-align: center;
+    }
+
+    & .em {
+        color: $pink;
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+.practice-place {
+    & p {
+        text-align: center;
+        margin-top: 8px;
+    }
+    & .place {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.ban {
+    & .bg-white-wrapper {
+        img {
+            padding: 16px 0;
+        }
+    }
+}
+
+.schedule {
+    .calendar-wrapper {
+        text-align: center;
+    }
+    iframe {
+        max-width: 100%;
+    }
+}
+
+.qa {
+    & .question {
+        background-color: $brown;
+        background-repeat: no-repeat;
+        background-image: url('/oz_nerima/wp-content/themes/oz/assets/img/arrow_up.svg');
+        background-position: right 16px center;
+        background-size: 16px;
+        border-radius: 6px;
+        color: $white;
+        padding: 8px;
+        text-indent: -1em;
+        padding-left: 1.6em;
+        padding-right: 3em;
+
+        &::before {
+            content: "Q "
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .question-close {
+        background-image: url('/oz_nerima/wp-content/themes/oz/assets/img/arrow_down.svg');
+    }
+
+    & .answer {
+        display: none;
+        padding: 8px;
+        padding-left: 1.6em;
+        text-indent: -1em;
+        &::before {
+            content: "A "
+        }
+    }
+}
+
+// form
+.wpcf7-form {
+    margin: 40px auto;
+    max-width: 498px;
+
+    .form-block {
+        margin-bottom: 32px;
+
+        & .caution {
+            color: $gray;
+        }
+    }
+
+    input {
+        box-sizing: border-box;
+        padding: .5em;
+        border: 1px solid $black;
+        max-width: 96%;
+    }
+
+    .age input {
+        padding: auto 8px;
+    }
+
+    textarea {
+        box-sizing: border-box;
+        max-width: 96%;
+        border: 1px solid $black;
+    }
+
+    .sex {
+        & .first {
+            margin-left: 0;
+        }
+    }
+
+    .badhistory {
+        height: 2em;
+    }
+
+    .submitbtn {
+        background-color: $white;
+        padding: 16px 32px;
+        letter-spacing: $text-space-m;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    span.wpcf7-not-valid-tip {
+        color: $pink;
+    }
+
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing {
+        margin: 0;
+        border: 2px solid $pink;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .recruit-box-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .recruit-box {
+            width: 30%;
+            font-size: 20px;
+        }
+    }
+
+    .practice-contents {
+        & .chase-wrapper {
+            margin: 0 auto;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+
+    .signup {
+        .desc {
+            text-align: center;
+        }
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        & .plan-wrapper {
+            width: 48%;
+            &:first-child {
+                margin-right: 40px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
